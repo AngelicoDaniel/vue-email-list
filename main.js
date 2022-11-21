@@ -23,8 +23,9 @@ var app = new Vue({
         },
         mailGenerator (){
             for (let index = 0; index < 10; index++) {
-                this.randomMail()
-                
+                this.randomMail();
+                this.newArr = [] 
+
             }
         }
 
