@@ -22,7 +22,7 @@
 
 
     <button class="btn btn-primary" @click="mailGenerator">Gioca</button>
-    <ul v-for="(element, index) in newArr">
+    <ul v-for="(element, index) in newArr" :class="(newArr.length < 10) ? 'd-none' : 'd-block'">
         <li>{{ element }}</li>
     </ul>
 
